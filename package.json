@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.htm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rudly-Rafael/website.git"
+  },
+  "author": "Arun Selva Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rudly-Rafael/website/issues"
+  },
+  "homepage": "https://github.com/Rudly-Rafael/website#readme",
+  "dependencies": {
+    "modern-normalize": "^0.6.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "sass": "^1.26.9"
+  }
+}
