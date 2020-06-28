@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.htm",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.htm --detailed-report 10 --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"**/*.js\" --ignore-pattern node_modules/"
   },
   "repository": {
     "type": "git",
