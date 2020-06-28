@@ -1,8 +1,12 @@
 @import './base/reset';
 @import './base/utils';
 
-.container {
+main {
   height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 
   .navbar {
     position: fixed;
@@ -26,6 +30,38 @@
           text-transform: uppercase;
         }
       }
+    }
+  }
+
+  section {
+    &.item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: center;
+    }
+
+    &#home {
+      background-color: #73cd9e;
+    }
+
+    &#insight-platform {
+      background-color: #f3ad33;
+    }
+
+    &#audience {
+      background-color: #06b9e9;
+    }
+
+    &#research {
+      background-color: #dd1130;
+    }
+
+    &#resources {
+      background-color: #ffffff;
     }
   }
 }
