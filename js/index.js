@@ -1,1 +1,5 @@
-console.log('Hello World');
+const init = () => {};
+
+document.addEventListener('onload', function () {
+  init();
+});
