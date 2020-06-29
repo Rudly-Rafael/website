@@ -1,3 +1,9 @@
 .full-width {
   width: 100% !important;
 }
+
+.background-cover-no-repeat-bottom-align {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}

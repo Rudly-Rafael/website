@@ -1,67 +1,72 @@
-@import './base/reset';
+@import './base/vendor';
 @import './base/utils';
 
-main {
-  height: 100%;
-  width: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+body {
+  height: 100vh;
+  overflow: hidden;
 
-  .navbar {
-    position: fixed;
-    display: flex;
-    justify-content: center;
+  main {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 
-    z-index: 1;
-    height: 80px;
-
-    ul {
+    .navbar {
+      position: fixed;
       display: flex;
-      list-style: none;
       justify-content: center;
 
-      li {
-        margin: 0 32px;
-        padding: 16px;
+      z-index: 1;
+      height: 80px;
 
-        a {
-          text-decoration: none;
-          text-transform: uppercase;
+      ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+
+        li {
+          margin: 0 32px;
+          padding: 16px;
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+          }
         }
       }
     }
-  }
 
-  section {
-    &.item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100vh;
-      scroll-snap-align: center;
-    }
+    section {
+      &.item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        scroll-snap-align: center;
+      }
 
-    &#home {
-      background-color: #73cd9e;
-    }
+      &#home {
+        @extend .background-cover-no-repeat-bottom-align;
+        background-image: url(./../assets/green_bg.svg);
+      }
 
-    &#insight-platform {
-      background-color: #f3ad33;
-    }
+      &#insight-platform {
+        @extend .background-cover-no-repeat-bottom-align;
+        background-image: url(./../assets/orange_bg.svg);
+      }
 
-    &#audience {
-      background-color: #06b9e9;
-    }
+      &#audience {
+        @extend .background-cover-no-repeat-bottom-align;
+        background-image: url(./../assets/blue_bg.svg);
+      }
 
-    &#research {
-      background-color: #dd1130;
-    }
-
-    &#resources {
-      background-color: #ffffff;
+      &#research {
+        @extend .background-cover-no-repeat-bottom-align;
+        background-image: url(./../assets/red_bg.svg);
+      }
     }
   }
 }
