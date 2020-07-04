@@ -1,6 +1,9 @@
 # File System
 .DS_Store
 
+# Webstorm
+.idea/*
+
 # VS Code
 .vscode/*
 !.vscode/settings.json

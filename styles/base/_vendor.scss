@@ -1,3 +1,5 @@
+@import "variable";
+
 .font-medium {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -6,4 +8,18 @@
 .font-light {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+}
+
+.btn-primary {
+  @extend .font-medium;
+
+  display: inline-block;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: $red-color;
+  color: $white-color;
+  text-align: center;
+  transition: all 0.2s;
 }
