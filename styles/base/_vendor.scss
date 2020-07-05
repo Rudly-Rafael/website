@@ -1,4 +1,4 @@
-@import "variable";
+@import 'variable';
 
 .font-medium {
   font-family: 'Roboto', sans-serif;
@@ -10,7 +10,7 @@
   font-weight: 300;
 }
 
-.btn-primary {
+.btn {
   @extend .font-medium;
 
   display: inline-block;
@@ -18,8 +18,17 @@
   padding: 12px 36px;
   border-radius: 6px;
   text-decoration: none;
-  background-color: $red-color;
-  color: $white-color;
   text-align: center;
   transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: $red-color;
+  color: $white-color;
+}
+
+.btn-secondary {
+  border: 1px $white-color solid;
+  background-color: $transparent-color;
+  color: $white-color;
 }

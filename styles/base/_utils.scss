@@ -2,6 +2,27 @@
   width: 100% !important;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.my-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .background-cover-no-repeat-bottom-align {
   background-size: cover;
   background-position: bottom;
